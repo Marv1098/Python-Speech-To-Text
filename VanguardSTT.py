@@ -17,4 +17,4 @@ with sr.Microphone() as source:
     data = thing.read().decode('utf-8')
     chrome_path = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
     webbrowser.register('google-chrome', None, webbrowser.BackgroundBrowser(chrome_path))
-    webbrowser.get('google-chrome').open(url, new = 1, autoraise=True)
+    webbrowser.get('google-chrome').open(data, new = 1, autoraise=True)
